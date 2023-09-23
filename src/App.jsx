@@ -1,33 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import TopCollege from './components/TopCollege'
+import ExploreEng from './components/ExploreEng'
+import Footer from './components/Footer'
+import TopUniversity from './components/TopUniversity'
+import Latest from './components/Latest'
+import Subsribe from './components/Subsribe'
+import TopDiploma from './components/TopDiploma'
+import Countries from './components/Countries'
+import DiplomaTable from './components/DiplomaTable'
+import TopStudy from './components/TopStudy'
+import TopCollection from './components/TopCollection'
+import CompanyLink from './components/CompanyLink'
+import Testimoial from './components/Testimoial'
+import Download from './components/Download'
 
-function App() {
-  const [count, setCount] = useState(0)
+import b1 from './assets/know-clg.png'
+import b2 from './assets/know-gn.png'
+import Skill from './components/Skill'
 
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Skill />
+    <TopCollege />
+    <TopCollection />
+    <img className='w-[90%] mx-auto mt-5 mb-5 ' src={b1} alt="" />
+    <TopUniversity />
+    <Countries />
+    <DiplomaTable />
+    <TopStudy />
+    <ExploreEng />
+    <img className='w-[90%] mx-auto mt-5 mb-5 ' src={b2} alt="" />
+    <TopDiploma />
+    <Latest />
+    <Subsribe />
+    <CompanyLink />
+    <Testimoial />
+    <Download />
+    <Footer /> 
     </>
   )
 }
